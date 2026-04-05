@@ -1,0 +1,5 @@
+# Data type
+1. int = -100, 1, 2, 3, 0, -3
+2. float = 1.5, 100.5, -10.2
+3. char = all keyboards key are character examples: 'a', 'b', 'A', '@' etc
+4. bool = true, false
