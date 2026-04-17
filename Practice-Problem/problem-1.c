@@ -195,10 +195,36 @@
 
 // A[0] = 1
 
+// #include <stdio.h>
+// int main()
+// {
+//     int n;
+//     scanf("%d", &n);
+
+//     int a[n];
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         scanf("%d", &a[i]);
+//     };
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (a[i] <= 10)
+//         {
+//             printf("A[%d] = %d\n", i, a[i]);
+//         }
+//     }
+
+//     return 0;
+// }
+
 #include <stdio.h>
+#include <limits.h>
 int main()
 {
     int n;
+    int min = INT_MAX;
     scanf("%d", &n);
 
     int a[n];
@@ -208,13 +234,19 @@ int main()
         scanf("%d", &a[i]);
     };
 
+    int idx;
+
     for (int i = 0; i < n; i++)
     {
-        if (a[i] <= 10)
+        if (a[i] < min)
         {
-            printf("A[%d] = %d\n", i, a[i]);
+            min = a[i];
+            idx = i;
         }
     }
+
+    printf("%d ", min);
+    printf("%d", 1+idx);
 
     return 0;
 }
