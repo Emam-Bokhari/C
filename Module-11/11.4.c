@@ -9,7 +9,7 @@ int main()
     int lengthOfA = strlen(a);
     int lengthOfB = strlen(b);
 
-    for (int i = 0; i <= lengthOfA + lengthOfB; i++)
+    for (int i = 0; i <= lengthOfB; i++)
     {
         a[i + lengthOfA] = b[i];
     }
